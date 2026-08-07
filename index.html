@@ -7,7 +7,19 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Patrones Invisibles</title>
+<title>Patrones Invisibles | J. Lobera</title>
+
+<meta name="description" content="Colección de libros de J. Lobera sobre psicología, filosofía, ciencia, economía y pensamiento crítico.">
+
+<meta name="keywords" content="Patrones Invisibles, J Lobera, libros, filosofía, psicología, atención, dinero, física cuántica">
+
+<meta name="author" content="J. Lobera">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
 <style>
 
@@ -17,11 +29,111 @@ padding:0;
 box-sizing:border-box;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 
-font-family:Arial,Helvetica,sans-serif;
-background:#0f1117;
+font-family:'Inter',sans-serif;
+
+background:#090909;
+
 color:white;
+
+overflow-x:hidden;
+
+}
+
+a{
+
+text-decoration:none;
+
+color:inherit;
+
+}
+
+img{
+
+max-width:100%;
+
+display:block;
+
+}
+
+header{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+z-index:999;
+
+background:rgba(9,9,9,.75);
+
+backdrop-filter:blur(12px);
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+nav{
+
+max-width:1400px;
+
+margin:auto;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px 40px;
+
+}
+
+.logo{
+
+font-size:28px;
+
+font-weight:900;
+
+letter-spacing:2px;
+
+}
+
+.logo span{
+
+color:#d9aa28;
+
+}
+
+.menu{
+
+display:flex;
+
+gap:35px;
+
+font-size:15px;
+
+font-weight:500;
+
+}
+
+.menu a{
+
+transition:.25s;
+
+}
+
+.menu a:hover{
+
+color:#d9aa28;
 
 }
 
@@ -39,103 +151,223 @@ text-align:center;
 
 padding:40px;
 
-background:linear-gradient(180deg,#0f1117,#181c27);
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.8)),
+url("banner.jpg");
+
+background-size:cover;
+
+background-position:center;
 
 }
 
-h1{
+.hero h1{
 
-font-size:64px;
+font-size:72px;
+
+font-weight:900;
 
 margin-bottom:20px;
 
 }
 
-h2{
+.hero p{
 
-font-weight:300;
+font-size:24px;
 
-font-size:26px;
+opacity:.9;
 
-color:#bbbbbb;
+margin-bottom:45px;
 
-margin-bottom:50px;
+line-height:1.6;
 
 }
 
-a.boton{
+.boton{
 
 display:inline-block;
 
-padding:18px 35px;
+padding:18px 40px;
 
-background:#d4af37;
+border-radius:10px;
 
-color:#111;
+background:#d9aa28;
 
-font-weight:bold;
+color:black;
 
-text-decoration:none;
+font-weight:700;
 
-border-radius:8px;
-
-transition:0.3s;
+transition:.35s;
 
 }
 
-a.boton:hover{
+.boton:hover{
 
-transform:scale(1.05);
+transform:translateY(-3px);
+
+box-shadow:0 12px 30px rgba(217,170,40,.35);
 
 }
 
 section{
 
-padding:80px 10%;
+max-width:1400px;
+
+margin:auto;
+
+padding:120px 40px;
 
 }
 
 .titulo{
 
-font-size:38px;
+font-size:48px;
 
-margin-bottom:40px;
+font-weight:900;
+
+margin-bottom:20px;
 
 }
 
-.libros{
+.subtitulo{
+
+font-size:20px;
+
+opacity:.7;
+
+margin-bottom:70px;
+
+max-width:800px;
+
+}
+
+.grid{
 
 display:grid;
 
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 
-gap:30px;
-
-}
-
-.libro{
-
-background:#1b2030;
-
-padding:30px;
-
-border-radius:15px;
+gap:40px;
 
 }
 
-.libro h3{
+.card{
+
+background:#151515;
+
+border-radius:18px;
+
+overflow:hidden;
+
+transition:.35s;
+
+border:1px solid rgba(255,255,255,.05);
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 30px 70px rgba(0,0,0,.45);
+
+}
+
+.card img{
+
+height:380px;
+
+width:100%;
+
+object-fit:cover;
+
+}
+
+.card-body{
+
+padding:25px;
+
+}
+
+.card h3{
+
+font-size:22px;
 
 margin-bottom:15px;
 
 }
 
+.card p{
+
+opacity:.7;
+
+line-height:1.7;
+
+font-size:15px;
+
+margin-bottom:20px;
+
+}
+
+.btnAmazon{
+
+display:inline-block;
+
+background:#d9aa28;
+
+padding:12px 22px;
+
+border-radius:8px;
+
+font-weight:700;
+
+color:black;
+
+}
+
 footer{
 
-padding:50px;
+padding:70px 20px;
 
 text-align:center;
 
+border-top:1px solid rgba(255,255,255,.08);
+
 color:#888;
+
+}
+
+@media(max-width:900px){
+
+.hero h1{
+
+font-size:46px;
+
+}
+
+.hero p{
+
+font-size:20px;
+
+}
+
+nav{
+
+padding:18px 20px;
+
+}
+
+.menu{
+
+display:none;
+
+}
+
+section{
+
+padding:90px 20px;
+
+}
 
 }
 
@@ -145,50 +377,211 @@ color:#888;
 
 <body>
 
-<div class="hero">
+<header>
+
+<nav>
+
+<div class="logo">
+
+PATRONES <span>INVISIBLES</span>
+
+</div>
+
+<div class="menu">
+
+<a href="#coleccion">Colección</a>
+
+<a href="#autor">Autor</a>
+
+<a href="#youtube">YouTube</a>
+
+<a href="#contacto">Contacto</a>
+
+</div>
+
+</nav>
+
+</header>
+
+<section class="hero">
 
 <div>
 
-<h1>Patrones Invisibles</h1>
+<h1>
 
-<h2>
-Comprende cómo funciona tu mente.<br>
-Descubre los patrones que cambian tu vida.
-</h2>
+Comprender el mundo<br>
 
-<a href="#libros" class="boton">
+empieza por comprender<br>
+
+sus patrones.
+
+</h1>
+
+<p>
+
+Una colección de libros de J. Lobera sobre psicología,<br>
+
+filosofía, ciencia, economía y pensamiento crítico.
+
+</p>
+
+<a href="#coleccion" class="boton">
+
 Explorar colección
+
 </a>
 
 </div>
 
-</div>
-
-<section id="libros">
+</section><section id="coleccion">
 
 <h2 class="titulo">
-Colección
+La colección
 </h2>
 
-<div class="libros">
-
-<div class="libro">
-
-<h3>Entrena tu atención</h3>
-
-<p>
-Aprende a recuperar el control de tu atención y mejora tu concentración.
+<p class="subtitulo">
+Once libros para comprender los mecanismos invisibles que moldean la mente, la sociedad, la economía y el comportamiento humano.
 </p>
+
+<div class="grid">
+
+<div class="card">
+<img src="img/como-funciona-el-mundo.png" alt="¿Cómo funciona el mundo?">
+<div class="card-body">
+<h3>¿Cómo funciona el mundo?</h3>
+<p>Los mecanismos invisibles que han construido la civilización.</p>
+<a class="btnAmazon" href="#">Ver en Amazon</a>
+</div>
+</div>
+
+<div class="card">
+<img src="img/quien-decide-por-ti.png" alt="¿Quién decide por ti?">
+<div class="card-body">
+<h3>¿Quién decide por ti?</h3>
+<p>Cómo el entorno, la sociedad y tu cerebro moldean tus decisiones.</p>
+<a class="btnAmazon" href="#">Ver en Amazon</a>
+</div>
+</div>
+
+<div class="card">
+<img src="img/aprende-a-gestionar-tu-dinero.png" alt="Aprende a gestionar tu dinero">
+<div class="card-body">
+<h3>Aprende a gestionar tu dinero</h3>
+<p>Guía práctica para ahorrar, organizar tus finanzas e invertir.</p>
+<a class="btnAmazon" href="#">Ver en Amazon</a>
+</div>
+</div>
+
+<div class="card">
+<img src="img/budismo-para-el-mundo-moderno.png" alt="Budismo para el mundo moderno">
+<div class="card-body">
+<h3>Budismo para el mundo moderno</h3>
+<p>La filosofía budista aplicada a la vida actual.</p>
+<a class="btnAmazon" href="#">Ver en Amazon</a>
+</div>
+</div><div class="card">
+<img src="img/entrena-tu-atencion.png" alt="Entrena tu atención">
+<div class="card-body">
+<h3>Entrena tu atención</h3>
+<p>Cómo recuperar el foco y entrenar tu mente en un mundo lleno de distracciones.</p>
+<a class="btnAmazon" href="#">Ver en Amazon</a>
+</div>
+</div>
+
+<div class="card">
+<img src="img/filosofia-para-el-mundo-moderno.png" alt="Filosofía para el mundo moderno">
+<div class="card-body">
+<h3>Filosofía para el mundo moderno</h3>
+<p>Piensa con más claridad. Vive con más propósito.</p>
+<a class="btnAmazon" href="#">Ver en Amazon</a>
+</div>
+</div>
+
+<div class="card">
+<img src="img/por-que-pensamos-como-pensamos.png" alt="¿Por qué pensamos como pensamos?">
+<div class="card-body">
+<h3>¿Por qué pensamos como pensamos?</h3>
+<p>Los patrones mentales que seguimos repitiendo generación tras generación.</p>
+<a class="btnAmazon" href="#">Ver en Amazon</a>
+</div>
+</div>
+
+<div class="card">
+<img src="img/por-que-ya-nada-dura.png" alt="¿Por qué ya nada dura?">
+<div class="card-body">
+<h3>¿Por qué ya nada dura?</h3>
+<p>Cómo los incentivos transformaron una sociedad de reparar en una de reemplazar.</p>
+<a class="btnAmazon" href="#">Ver en Amazon</a>
+</div>
+</div><div class="card">
+<img src="img/todo-es-una-negociacion.png" alt="Todo es una negociación">
+<div class="card-body">
+<h3>Todo es una negociación</h3>
+<p>El precio oculto de cada decisión.</p>
+<a class="btnAmazon" href="#">Ver en Amazon</a>
+</div>
+</div>
+
+<div class="card">
+<img src="img/vence-la-procrastinacion.png" alt="Vence la procrastinación">
+<div class="card-body">
+<h3>Vence la procrastinación</h3>
+<p>Por qué dejas las cosas para después y cómo empezar a actuar hoy.</p>
+<a class="btnAmazon" href="#">Ver en Amazon</a>
+</div>
+</div>
+
+<div class="card">
+<img src="img/los-secretos-de-la-fisica-cuantica.png" alt="Los secretos de la física cuántica">
+<div class="card-body">
+<h3>Los secretos de la física cuántica</h3>
+<p>Una guía sencilla para comprender la teoría que transformó la ciencia.</p>
+<a class="btnAmazon" href="#">Ver en Amazon</a>
+</div>
+</div>
+
+</div>
+</section><section id="autor">
+
+<h2 class="titulo">Sobre J. Lobera</h2>
+
+<p class="subtitulo">
+
+La colección <strong>Patrones Invisibles</strong> nace con un objetivo claro:
+explicar de forma sencilla cómo funcionan los mecanismos invisibles que
+condicionan nuestra mente, nuestras decisiones y la sociedad.
+
+</p>
+
+<div style="display:grid;grid-template-columns:2fr 1fr;gap:60px;align-items:center;">
+
+<div>
+
+<p style="line-height:2;font-size:18px;opacity:.85;">
+
+Cada libro aborda un aspecto distinto del comportamiento humano:
+psicología, filosofía, economía, ciencia, negociación,
+atención, productividad y pensamiento crítico.
+
+La intención no es ofrecer respuestas simples, sino proporcionar
+herramientas para pensar con mayor claridad y comprender mejor el mundo.
+
+</p>
+
+<br><br>
+
+<a class="boton" href="#coleccion">
+
+Ver la colección
+
+</a>
 
 </div>
 
-<div class="libro">
+<div style="text-align:center;">
 
-<h3>Próximamente...</h3>
-
-<p>
-Nuevos libros de la colección Patrones Invisibles.
-</p>
+<img src="img/logo.png"
+style="max-width:260px;margin:auto;opacity:.95;">
 
 </div>
 
@@ -196,9 +589,68 @@ Nuevos libros de la colección Patrones Invisibles.
 
 </section>
 
-<footer>
+<section id="youtube">
 
-© 2026 J. Lobera · Patrones Invisibles
+<h2 class="titulo">
+
+Canal de YouTube
+
+</h2>
+
+<p class="subtitulo">
+
+Próximamente encontrarás vídeos donde se desarrollan y amplían
+las ideas de los libros de la colección.
+
+</p>
+
+<div style="background:#151515;border-radius:20px;padding:80px;text-align:center;border:1px solid rgba(255,255,255,.08);">
+
+<h3 style="font-size:34px;margin-bottom:20px;">
+
+Patrones Invisibles
+
+</h3>
+
+<p style="opacity:.7;">
+
+El conocimiento explicado de forma sencilla.
+
+</p>
+
+<br>
+
+<a class="boton" href="#">
+
+Próximamente
+
+</a>
+
+</div>
+
+</section>
+
+<footer id="contacto">
+
+<h3 style="font-size:32px;margin-bottom:20px;">
+
+Patrones Invisibles
+
+</h3>
+
+<p>
+
+© 2026 J. Lobera
+
+</p>
+
+<br>
+
+<p style="opacity:.6">
+
+www.patronesinvisibles.com
+
+</p>
 
 </footer>
 
