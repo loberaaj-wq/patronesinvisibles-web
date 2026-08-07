@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Patrones Invisibles</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:Arial,Helvetica,sans-serif;
+background:#0f1117;
+color:white;
+
+}
+
+.hero{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:40px;
+
+background:linear-gradient(180deg,#0f1117,#181c27);
+
+}
+
+h1{
+
+font-size:64px;
+
+margin-bottom:20px;
+
+}
+
+h2{
+
+font-weight:300;
+
+font-size:26px;
+
+color:#bbbbbb;
+
+margin-bottom:50px;
+
+}
+
+a.boton{
+
+display:inline-block;
+
+padding:18px 35px;
+
+background:#d4af37;
+
+color:#111;
+
+font-weight:bold;
+
+text-decoration:none;
+
+border-radius:8px;
+
+transition:0.3s;
+
+}
+
+a.boton:hover{
+
+transform:scale(1.05);
+
+}
+
+section{
+
+padding:80px 10%;
+
+}
+
+.titulo{
+
+font-size:38px;
+
+margin-bottom:40px;
+
+}
+
+.libros{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+}
+
+.libro{
+
+background:#1b2030;
+
+padding:30px;
+
+border-radius:15px;
+
+}
+
+.libro h3{
+
+margin-bottom:15px;
+
+}
+
+footer{
+
+padding:50px;
+
+text-align:center;
+
+color:#888;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="hero">
+
+<div>
+
+<h1>Patrones Invisibles</h1>
+
+<h2>
+Comprende cómo funciona tu mente.<br>
+Descubre los patrones que cambian tu vida.
+</h2>
+
+<a href="#libros" class="boton">
+Explorar colección
+</a>
+
+</div>
+
+</div>
+
+<section id="libros">
+
+<h2 class="titulo">
+Colección
+</h2>
+
+<div class="libros">
+
+<div class="libro">
+
+<h3>Entrena tu atención</h3>
+
+<p>
+Aprende a recuperar el control de tu atención y mejora tu concentración.
+</p>
+
+</div>
+
+<div class="libro">
+
+<h3>Próximamente...</h3>
+
+<p>
+Nuevos libros de la colección Patrones Invisibles.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 J. Lobera · Patrones Invisibles
+
+</footer>
+
+</body>
+
+</html>
