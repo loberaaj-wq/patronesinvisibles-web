@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aprende a gestionar tu dinero | Material complementario</title>
+
+<style>
+
+:root{
+--bg:#05070a;
+--card:#0d1219;
+--gold:#d4a936;
+--gold2:#f0c95c;
+--text:#f4f4f4;
+--muted:#9da5af;
+--border:rgba(212,169,54,.22);
+--max:1180px;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:var(--bg);
+color:var(--text);
+line-height:1.6;
+}
+
+.container{
+width:min(92%,var(--max));
+margin:auto;
+}
+
+header{
+padding:70px 0 45px;
+border-bottom:1px solid var(--border);
+}
+
+.eyebrow{
+color:var(--gold2);
+font-size:.85rem;
+font-weight:bold;
+text-transform:uppercase;
+letter-spacing:2px;
+margin-bottom:12px;
+}
+
+h1{
+font-size:clamp(2.2rem,5vw,4rem);
+line-height:1.05;
+margin-bottom:20px;
+}
+
+.intro{
+max-width:760px;
+color:var(--muted);
+font-size:1.1rem;
+}
+
+section{
+padding:55px 0;
+}
+
+.section-title{
+font-size:2rem;
+margin-bottom:12px;
+}
+
+.section-text{
+color:var(--muted);
+max-width:800px;
+margin-bottom:30px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:var(--card);
+border:1px solid var(--border);
+border-radius:14px;
+padding:28px;
+}
+
+.card h3{
+color:var(--gold2);
+margin-bottom:12px;
+font-size:1.25rem;
+}
+
+.card p{
+color:var(--muted);
+}
+
+.table-wrap{
+overflow-x:auto;
+background:var(--card);
+border:1px solid var(--border);
+border-radius:14px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+min-width:650px;
+}
+
+th,td{
+padding:15px;
+text-align:left;
+border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+th{
+color:var(--gold2);
+background:rgba(212,169,54,.06);
+}
+
+td{
+color:var(--muted);
+}
+
+.exercise{
+background:var(--card);
+border-left:3px solid var(--gold);
+border-radius:10px;
+padding:25px;
+margin-bottom:20px;
+}
+
+.exercise h3{
+margin-bottom:10px;
+}
+
+.exercise p{
+color:var(--muted);
+}
+
+.back{
+padding:35px 0 60px;
+}
+
+.back a{
+color:var(--gold2);
+text-decoration:none;
+}
+
+.back a:hover{
+text-decoration:underline;
+}
+
+footer{
+border-top:1px solid var(--border);
+padding:30px 0;
+color:var(--muted);
+font-size:.9rem;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container">
+
+<div class="eyebrow">Patrones Invisibles · Material complementario</div>
+
+<h1>Aprende a gestionar tu dinero</h1>
+
+<p class="intro">
+Herramientas, tablas y ejercicios para ayudarte a entender mejor tus ingresos,
+gastos, decisiones financieras y hábitos de consumo.
+</p>
+
+</div>
+</header>
+
+
+<main>
+
+<section>
+<div class="container">
+
+<h2 class="section-title">Antes de empezar</h2>
+
+<p class="section-text">
+Gestionar mejor el dinero no consiste únicamente en gastar menos.
+Consiste en conocer cómo entra y sale tu dinero, detectar patrones y tomar
+decisiones con mayor información.
+</p>
+
+<div class="grid">
+
+<div class="card">
+<h3>1. Observa</h3>
+<p>
+Registra durante un periodo suficiente tus ingresos y gastos reales antes
+de intentar cambiar tus hábitos.
+</p>
+</div>
+
+<div class="card">
+<h3>2. Clasifica</h3>
+<p>
+Separa los gastos necesarios, los gastos variables y aquellos relacionados
+principalmente con decisiones de consumo.
+</p>
+</div>
+
+<div class="card">
+<h3>3. Decide</h3>
+<p>
+Una vez que conoces tus patrones, establece prioridades y decide qué quieres
+mantener, reducir o modificar.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<section>
+<div class="container">
+
+<h2 class="section-title">Tabla de control mensual</h2>
+
+<p class="section-text">
+Utiliza esta tabla como punto de partida para analizar tu situación financiera.
+</p>
+
+<div class="table-wrap">
+
+<table>
+
+<thead>
+<tr>
+<th>Categoría</th>
+<th>Presupuesto</th>
+<th>Gasto real</th>
+<th>Diferencia</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>Vivienda</td>
+<td>________ €</td>
+<td>________ €</td>
+<td>________ €</td>
+</tr>
+
+<tr>
+<td>Alimentación</td>
+<td>________ €</td>
+<td>________ €</td>
+<td>________ €</td>
+</tr>
+
+<tr>
+<td>Transporte</td>
+<td>________ €</td>
+<td>________ €</td>
+<td>________ €</td>
+</tr>
+
+<tr>
+<td>Ocio</td>
+<td>________ €</td>
+<td>________ €</td>
+<td>________ €</td>
+</tr>
+
+<tr>
+<td>Compras</td>
+<td>________ €</td>
+<td>________ €</td>
+<td>________ €</td>
+</tr>
+
+<tr>
+<td>Otros</td>
+<td>________ €</td>
+<td>________ €</td>
+<td>________ €</td>
+</tr>
+
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>________ €</strong></td>
+<td><strong>________ €</strong></td>
+<td><strong>________ €</strong></td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+</section>
+
+
+<section>
+<div class="container">
+
+<h2 class="section-title">Analiza tus gastos</h2>
+
+<p class="section-text">
+No todos los gastos tienen el mismo impacto. Utiliza estas preguntas para
+detectar patrones que normalmente pasan desapercibidos.
+</p>
+
+<div class="exercise">
+
+<h3>¿Qué gastos se repiten?</h3>
+
+<p>
+Anota los pagos que realizas de forma automática o periódica.
+¿Hay alguno que ya no utilizas o que podrías revisar?
+</p>
+
+</div>
+
+
+<div class="exercise">
+
+<h3>¿Qué gastos aparecen por impulso?</h3>
+
+<p>
+Piensa en compras que no estaban previstas.
+¿Qué las desencadenó: aburrimiento, comodidad, publicidad, presión social
+o simplemente disponibilidad?
+</p>
+
+</div>
+
+
+<div class="exercise">
+
+<h3>¿Qué gastos aportan realmente valor?</h3>
+
+<p>
+No se trata únicamente de eliminar gastos.
+Pregúntate cuáles de ellos mejoran realmente tu vida y cuáles realizas
+simplemente por costumbre.
+</p>
+
+</div>
+
+</div>
+</section>
+
+
+<section>
+<div class="container">
+
+<h2 class="section-title">Tu margen de decisión</h2>
+
+<p class="section-text">
+Una forma sencilla de observar tu situación es calcular cuánto dinero queda
+después de cubrir tus gastos habituales.
+</p>
+
+<div class="card">
+
+<h3>Cálculo</h3>
+
+<p>
+
+<strong>Ingresos mensuales</strong><br>
+________ €<br><br>
+
+<strong>− Gastos mensuales</strong><br>
+________ €<br><br>
+
+<strong>= Margen disponible</strong><br>
+________ €
+
+</p>
+
+</div>
+
+</div>
+</section>
+
+
+<section>
+<div class="container">
+
+<h2 class="section-title">Una revisión de 10 minutos</h2>
+
+<p class="section-text">
+Una vez al mes, responde a estas cinco preguntas.
+</p>
+
+<div class="grid">
+
+<div class="card">
+<h3>01</h3>
+<p>¿Cuánto dinero entró este mes?</p>
+</div>
+
+<div class="card">
+<h3>02</h3>
+<p>¿Cuánto dinero salió?</p>
+</div>
+
+<div class="card">
+<h3>03</h3>
+<p>¿Qué gasto me sorprendió?</p>
+</div>
+
+<div class="card">
+<h3>04</h3>
+<p>¿Qué decisión financiera repetiría?</p>
+</div>
+
+<div class="card">
+<h3>05</h3>
+<p>¿Qué quiero cambiar el próximo mes?</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<section>
+<div class="container">
+
+<h2 class="section-title">Una última idea</h2>
+
+<p class="section-text">
+El objetivo de estas herramientas no es convertir cada decisión en una
+cuenta matemática. Es hacer visibles los patrones que influyen en nuestras
+decisiones para poder actuar sobre ellos de forma consciente.
+</p>
+
+<div class="card">
+
+<p>
+<strong>
+Lo que no se observa, difícilmente se puede gestionar.
+</strong>
+</p>
+
+</div>
+
+</div>
+</section>
+
+
+<div class="back">
+
+<div class="container">
+
+<a href="../../index.html">
+← Volver a Patrones Invisibles
+</a>
+
+</div>
+
+</div>
+
+</main>
+
+
+<footer>
+
+<div class="container">
+
+© 2026 <strong>Patrones Invisibles · J. Lobera</strong>
+
+</div>
+
+</footer>
+
+</body>
+</html>
